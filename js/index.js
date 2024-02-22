@@ -12,10 +12,9 @@ for (const p of document.querySelectorAll("p")) {
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
-
-
         const hahahahahahahtesttt = document.getElementById(`excalidraw-${i}`);
-        const heheheh = ReactDOM.createRoot(hahahahahahahtesttt);
+        console.log('kakkakakakakaakkaakakka')
+        console.log(hahahahahahahtesttt)
 
         let url = `https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/${excalidrawFileNameMD}`;
         setTimeout(() => {
