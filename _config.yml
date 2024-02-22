@@ -39,7 +39,7 @@ navigation:
 
 collections:
   analytic:
-    collections_dir: _academy/AWS
+    collections_dir: Yuu Academy/AWS
     output: true
     permalink: /:collection/:path/
 
