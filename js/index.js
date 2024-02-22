@@ -22,7 +22,8 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                         var options =  {
                             initialData: {
                                 elements
-                            }
+                            },
+                            viewModeEnabled: true
                         };
 
                         return React.createElement(

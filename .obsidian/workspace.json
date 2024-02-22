@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "007880252a4e3554",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_analytics/AWS OpenSearch.md",
+                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_analytics/AWS OpenSearch.md",
+                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_analytics/AWS OpenSearch.md"
+                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md"
               }
             }
           }
@@ -147,8 +158,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ac507fad3ca09cf0",
+  "active": "007880252a4e3554",
   "lastOpenFiles": [
+    "_analytics/AWS OpenSearch.md",
+    "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
+    "Excalidraw",
+    "_includes/icon-linkedin.html",
     "_analytics/Athena.md",
     "_analytics/Kinesis Data Analytics.md",
     "aws_analytic.html",
@@ -159,7 +174,6 @@
     "images/dark.png",
     "README.md",
     "docs.md",
-    "_analytics/AWS OpenSearch.md",
     "academy/Excalidraw/Drawing 2023-03-03 17.25.53.excalidraw.md"
   ]
 }
