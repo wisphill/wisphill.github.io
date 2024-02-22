@@ -40,7 +40,7 @@ navigation:
 collections:
   somethings:
     output: true
-    permalink: /home/:collection/:path/
+    permalink: /:collection/:path/
 
 projects:
   - name: git-secret
