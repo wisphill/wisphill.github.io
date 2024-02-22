@@ -1,3 +1,9 @@
+---
+name: Jane Doe
+position: Developer
+layout: post
+---
+
 #aws #analytics #opensearch
 
 Amazon Opensearch is a successor to ElasticSearch and commonly to use as a complement to other database. Coupled with Dynamo, ...
