@@ -348,6 +348,23 @@ const App = () => {
             ]
         }
     };
+
+    /// testtinggg yuuu
+    for (const p of document.querySelectorAll("p")) {
+        if (p.textContent.search(/!\[\[(.+)excalidraw(.+)\]\]/) !== -1) {
+            console.log(p.textContent)
+            console.log(p.textContent.match(/!\[\[(.+)excalidraw(.+)\]\]/)[0])
+
+            let url = 'https://example.com';
+
+            fetch(url)
+                .then(res => res.json())
+                .then(out =>
+                    console.log('Checkout this JSON! ', out))
+                .catch(err => { throw err });
+        }
+    }
+    
     return React.createElement(
         React.Fragment,
         null,
