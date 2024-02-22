@@ -18,41 +18,44 @@ for (const p of document.querySelectorAll("p")) {
         const heheheh = ReactDOM.createRoot(hahahahahahahtesttt);
 
         let url = `https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/${excalidrawFileNameMD}`;
-        fetch(url)
-            .then(res => {
-                res.text().then(r => {
-                    var code = r.toString().match(/```json(.*)```/s)[1];
-                    var elements = JSON.parse(code).elements;
-                    console.log(elements)
+        setTimeout(() => {
+            fetch(url)
+                .then(res => {
+                    res.text().then(r => {
+                        var code = r.toString().match(/```json(.*)```/s)[1];
+                        var elements = JSON.parse(code).elements;
+                        console.log(elements)
 
 
-                    const App = () => {
-                        var options =  {
-                            initialData: {
-                                elements
-                            }
+                        const App = () => {
+                            var options =  {
+                                initialData: {
+                                    elements
+                                }
+                            };
+
+                            return React.createElement(
+                                React.Fragment,
+                                null,
+                                React.createElement(
+                                    "div",
+                                    {
+                                        style: { height: "500px" },
+                                    },
+                                    React.createElement(ExcalidrawLib.Excalidraw, options),
+                                ),
+                            );
                         };
 
-                        return React.createElement(
-                            React.Fragment,
-                            null,
-                            React.createElement(
-                                "div",
-                                {
-                                    style: { height: "500px" },
-                                },
-                                React.createElement(ExcalidrawLib.Excalidraw, options),
-                            ),
-                        );
-                    };
-
-                    const excalidrawWrapper = document.getElementById('app');
-                    const root = ReactDOM.createRoot(excalidrawWrapper);
-                    root.render(React.createElement(App));
+                        const excalidrawWrapper = document.getElementById(`excalidraw-${i}`);
+                        const root = ReactDOM.createRoot(excalidrawWrapper);
+                        root.render(React.createElement(App));
+                    })
                 })
-            })
-            .then(out =>
-                console.log('Checkout this JSON! ', out))
-            .catch(err => { throw err });
+                .then(out =>
+                    console.log('Checkout this JSON! ', out))
+                .catch(err => { throw err });
+        }, 2000)
+
     }
 }
