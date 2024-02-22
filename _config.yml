@@ -38,7 +38,6 @@ navigation:
     url: /examples2
 
 collections:
-  collections_dir: academy/AWS
   analytic:
     output: true
     permalink: /:collection/:path/
