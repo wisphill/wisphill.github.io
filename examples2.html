@@ -1,0 +1,31 @@
+---
+layout: default
+permalink: examples2
+---
+
+<section>
+  <h1>Examples</h1>
+
+  <p>
+    This is more like an example page with different widgets.
+  </p>
+</section>
+
+<section>
+
+  <h2>Cards</h2>
+
+  <div class="grid t-hackcss-cards">
+
+    {% for st in site.somethings %}
+    <h2>
+      <a href="{{ st.url | prepend: site.baseurl }}">
+        {{ st.name }} - {{ st.position }}
+      </a>
+    </h2>
+    <p>{{ st.content | markdownify }}</p>
+
+    {% endfor %}
+
+  </div>
+</section>

@@ -34,6 +34,13 @@ navigation:
     url: /docs
   - text: Examples
     url: /examples
+  - text: Examples2
+    url: /examples2
+
+collections:
+  somethings:
+    output: true
+    permalink: /:collection/:path/
 
 projects:
   - name: git-secret
