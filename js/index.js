@@ -23,7 +23,8 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                             initialData: {
                                 elements
                             },
-                            viewModeEnabled: true
+                            viewModeEnabled: true,
+                            scrollToContent: true
                         };
 
                         return React.createElement(
