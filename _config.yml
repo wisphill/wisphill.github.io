@@ -38,7 +38,7 @@ navigation:
     url: /examples2
 
 collections:
-  analytic:
+  analytics:
     output: true
     permalink: /:collection/:path/
 
