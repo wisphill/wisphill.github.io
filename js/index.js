@@ -48,6 +48,9 @@ for (const p of document.querySelectorAll("p")) {
                         };
 
                         const excalidrawWrapper = document.getElementById(`excalidraw-${i}`);
+                        console.log('??????????????????????????')
+                        console.log('??????????????????????????')
+                        console.log(excalidrawWrapper)
                         const root = ReactDOM.createRoot(excalidrawWrapper);
                         root.render(React.createElement(App));
                     })
