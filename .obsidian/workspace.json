@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "a62cf1eef69a845d",
+    "type": "split",
+    "children": [
+      {
+        "id": "7f7d0321d5b6a1f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac507fad3ca09cf0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_analytics/Kinesis Data Analytics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0534cf3eee9417e",
+    "type": "split",
+    "children": [
+      {
+        "id": "841803a9a0c2460a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9a264e220332654",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b132c11a3136a147",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a2bf9fc9d96ecf2d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ed60d4089bd800ce",
+    "type": "split",
+    "children": [
+      {
+        "id": "b4575b4ac7c0be76",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3cd7d9bb383b72ef",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_analytics/Kinesis Data Analytics.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "da9cb08661e6497b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_analytics/Kinesis Data Analytics.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e2ea676524ce0f3b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5984818ee2ef18f9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_analytics/Kinesis Data Analytics.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "ac507fad3ca09cf0",
+  "lastOpenFiles": [
+    "_analytics/Athena.md",
+    "images/standard.png",
+    "images/markdown.png",
+    "images/dark.png",
+    "README.md",
+    "docs.md",
+    "_analytics/AWS OpenSearch.md",
+    "academy/Excalidraw/Drawing 2023-03-03 17.25.53.excalidraw.md"
+  ]
+}

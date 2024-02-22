@@ -355,7 +355,7 @@ const App = () => {
             console.log(p.textContent)
             console.log(p.textContent.match(/!\[\[(.+)excalidraw(.+)\]\]/)[0])
 
-            let url = 'https://example.com';
+            let url = 'https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/Drawing%202023-03-03%2017.25.53.excalidraw.md';
 
             fetch(url)
                 .then(res => res.json())
@@ -364,7 +364,7 @@ const App = () => {
                 .catch(err => { throw err });
         }
     }
-    
+
     return React.createElement(
         React.Fragment,
         null,
