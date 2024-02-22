@@ -1,9 +1,16 @@
+var i = 0;
 for (const p of document.querySelectorAll("p")) {
+    i++;
     if (p.textContent.search(/!\[\[(.+)excalidraw(.+)\]\]/) !== -1) {
         console.log(p.textContent)
         var excalidrawFileWithFormat = p.textContent.match(/!\[\[(.+)\]\]/)[1]
         var excalidrawFileName = excalidrawFileWithFormat.toString().split('|')[0]
         var excalidrawFileNameMD = `${excalidrawFileName.trimEnd().trimStart()}.md`;
+
+        var newExcalidrawBlock = document.createElement("div");
+        newExcalidrawBlock.setAttribute("id", `excalidraw-${i}`);
+        newExcalidrawBlock.innerHTML = "";
+        p.parentNode.replaceChild(newExcalidrawBlock, p);
 
         let url = `https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/${excalidrawFileNameMD}`;
         fetch(url)
@@ -21,8 +28,6 @@ for (const p of document.querySelectorAll("p")) {
                             }
                         };
 
-
-
                         return React.createElement(
                             React.Fragment,
                             null,
@@ -36,10 +41,9 @@ for (const p of document.querySelectorAll("p")) {
                         );
                     };
 
-                    const excalidrawWrapper = document.getElementById("app");
+                    const excalidrawWrapper = document.getElementById(`excalidraw-${i}`);
                     const root = ReactDOM.createRoot(excalidrawWrapper);
                     root.render(React.createElement(App));
-
                 })
             })
             .then(out =>
