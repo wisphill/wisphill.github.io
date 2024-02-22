@@ -1,6 +1,5 @@
-var i = 0;
-for (const p of document.querySelectorAll("p")) {
-    i++;
+
+for (const [index, p] of document.querySelectorAll("p").entries()) {
     if (p.textContent.search(/!\[\[(.+)excalidraw(.+)\]\]/) !== -1) {
         console.log(p.textContent)
         var excalidrawFileWithFormat = p.textContent.match(/!\[\[(.+)\]\]/)[1]
@@ -12,7 +11,7 @@ for (const p of document.querySelectorAll("p")) {
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
-        const hahahahahahahtesttt = document.getElementById(`excalidraw-${i}`);
+        const hahahahahahahtesttt = document.getElementById(`excalidraw-${index}`);
         console.log('kakkakakakakaakkaakakka')
         console.log(hahahahahahahtesttt)
 
@@ -46,11 +45,7 @@ for (const p of document.querySelectorAll("p")) {
                             );
                         };
 
-                        const excalidrawWrapper = document.getElementById(`excalidraw-${i}`);
-                        console.log('??????????????????????????')
-                        console.log('??????????????????????????')
-                        console.log(`excalidraw-${i}`)
-                        console.log(excalidrawWrapper)
+                        const excalidrawWrapper = document.getElementById(`excalidraw-${index}`);
                         const root = ReactDOM.createRoot(excalidrawWrapper);
                         root.render(React.createElement(App));
                     })
