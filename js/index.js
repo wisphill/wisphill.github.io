@@ -12,6 +12,11 @@ for (const p of document.querySelectorAll("p")) {
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
+
+
+        const hahahahahahahtesttt = document.getElementById(`excalidraw-${i}`);
+        const heheheh = ReactDOM.createRoot(hahahahahahahtesttt);
+
         let url = `https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/${excalidrawFileNameMD}`;
         fetch(url)
             .then(res => {
@@ -41,7 +46,7 @@ for (const p of document.querySelectorAll("p")) {
                         );
                     };
 
-                    const excalidrawWrapper = document.getElementById(`excalidraw-${i}`);
+                    const excalidrawWrapper = document.getElementById('app');
                     const root = ReactDOM.createRoot(excalidrawWrapper);
                     root.render(React.createElement(App));
                 })
