@@ -38,8 +38,8 @@ navigation:
     url: /examples2
 
 collections:
+  collections_dir: academy/AWS
   analytic:
-    collections_dir: Yuu Academy/AWS
     output: true
     permalink: /:collection/:path/
 
