@@ -58,7 +58,7 @@ for (const p of document.querySelectorAll("p")) {
                 .then(out =>
                     console.log('Checkout this JSON! ', out))
                 .catch(err => { throw err });
-        }, 2000)
+        }, 20000)
 
     }
 }
