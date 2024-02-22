@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: examples2
+permalink: aws_analytic
 ---
 
 <section>
@@ -17,13 +17,13 @@ permalink: examples2
 
   <div class="grid t-hackcss-cards">
 
-    {% for st in site.analytics %}
+    {% for analytic in site.analytics %}
     <h2>
-      <a href="{{ st.url | prepend: site.baseurl }}">
+      <a href="{{ analytic.url | prepend: site.baseurl }}">
         Testinggggg yuuuuuu
       </a>
     </h2>
-    <p>{{ st.content | markdownify }}</p>
+    <p>{{ analytic.content | markdownify }}</p>
 
     {% endfor %}
 
