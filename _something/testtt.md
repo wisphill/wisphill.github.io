@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Parsing XML with Ruby hahahahahah
+title: Parsing XML with Ruby
 date: 2014-01-15 00:18:23
 author: sobolevn
 categories: ruby

@@ -37,6 +37,11 @@ navigation:
   - text: Examples2
     url: /examples2
 
+collections:
+  something:
+    output: true
+    permalink: /:collection/:path
+
 projects:
   - name: git-secret
     description: A bash-tool to store your private data inside a git repository.
