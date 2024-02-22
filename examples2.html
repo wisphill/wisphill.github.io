@@ -19,7 +19,7 @@ permalink: examples2
 
     {% for st in site.somethings %}
     <h2>
-      <a href="{{ st.url }}">
+      <a href="{{ st.url | prepend: site.baseurl }}">
         {{ st.name }} - {{ st.position }}
       </a>
     </h2>
