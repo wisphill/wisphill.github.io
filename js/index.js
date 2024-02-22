@@ -7,7 +7,7 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
         var excalidrawFileNameMD = `${excalidrawFileName.trimEnd().trimStart()}.md`;
 
         var newExcalidrawBlock = document.createElement("div");
-        newExcalidrawBlock.setAttribute("id", `excalidraw-${i}`);
+        newExcalidrawBlock.setAttribute("id", `excalidraw-${index}`);
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
