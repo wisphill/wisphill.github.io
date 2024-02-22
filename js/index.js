@@ -348,6 +348,16 @@ const App = () => {
             ]
         }
     };
+
+
+    let url = 'https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/Drawing%202023-03-03%2017.25.53.excalidraw.md';
+
+    fetch(url)
+        .then(res => res.json())
+        .then(out =>
+            console.log('Checkout this JSON! ', out))
+        .catch(err => { throw err });
+    
     return React.createElement(
         React.Fragment,
         null,
