@@ -38,9 +38,8 @@ navigation:
     url: /examples2
 
 collections:
-  something:
+  somethings:
     output: true
-    permalink: /:collection/:path
 
 projects:
   - name: git-secret
