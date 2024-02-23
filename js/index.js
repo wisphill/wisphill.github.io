@@ -5,14 +5,6 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
         const excalidrawFileNameMD = `${excalidrawFileName.trimEnd().trimStart()}.md`;
 
         var newExcalidrawBlock = document.createElement("div");
-
-        //
-        // <div
-        //     onWheelCapture={e => {
-        //         // Stop Excalidraw from hijacking scroll
-        //         e.stopPropagation();
-        //     }}
-        // >
         newExcalidrawBlock.setAttribute("id", `excalidraw-${index}`);
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
@@ -37,7 +29,7 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                 animate: true
                             })
                         }, [excalidrawAPI]);
-                        
+
                         var options =  {
                             initialData: {
                                 elements
@@ -53,6 +45,10 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                 "div",
                                 {
                                     style: { height: "500px" },
+                                    onWheelCapture: (e) => {
+                                        // Stop Excalidraw from hijacking scroll
+                                        e.stopPropagation();
+                                    }
                                 },
                                 React.createElement(ExcalidrawLib.Excalidraw, options),
                             ),
