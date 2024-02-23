@@ -26,4 +26,5 @@ Athena is the serverless query service to analyze data store in Amazon S3
 ### Athena Federated Query
 - <mark style="background: #FF5582A6;">SQL query for analyzing on any datasource (AWS or on-premise) by using Data Source Connector that runs on Lambda function.</mark>
 
+### Athena Federated Query Diagram
 ![[Drawing 2023-03-03 16.49.52.excalidraw|600]]
