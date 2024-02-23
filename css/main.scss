@@ -35,3 +35,8 @@ $on-palm:          768px;
         "styles",
         "highlight"
 ;
+
+// workaround to hide Excalidraw toolbar
+.excalidraw .App-bottom-bar > .Island {
+  display: none !important;
+}
