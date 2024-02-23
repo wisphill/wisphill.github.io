@@ -37,6 +37,7 @@ navigation:
   - text: AWS Analytic
     url: /aws_analytic
 
+collections_dir: collections
 collections:
   analytics:
     output: true
