@@ -7,14 +7,14 @@ permalink: aws_analytic
     <div class="media t-hackcss-media">
       <div class="media-body">
         <div class="media-heading">
-          <span>{{ post.date | date_to_string }} &raquo;
+          <span>&raquo;
             <a href="{{ analytic.url | prepend: site.baseurl }}">
               {{ analytic.title }}
             </a>
           </span>
         </div>
         <div class="media-content">
-          <p>{{ analytic.content | markdownify }}</p>
+          <p>{{ analytic.description | markdownify }}</p>
         </div>
       </div>
     </div>
