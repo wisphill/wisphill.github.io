@@ -5,6 +5,14 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
         const excalidrawFileNameMD = `${excalidrawFileName.trimEnd().trimStart()}.md`;
 
         var newExcalidrawBlock = document.createElement("div");
+
+        //
+        // <div
+        //     onWheelCapture={e => {
+        //         // Stop Excalidraw from hijacking scroll
+        //         e.stopPropagation();
+        //     }}
+        // >
         newExcalidrawBlock.setAttribute("id", `excalidraw-${index}`);
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
