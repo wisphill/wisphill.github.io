@@ -24,7 +24,8 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                 elements
                             },
                             viewModeEnabled: true,
-                            scrollToContent: true
+                            scrollToContent: true,
+                            zoom: 0.5
                         };
 
                         return React.createElement(
