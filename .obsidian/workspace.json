@@ -23,9 +23,11 @@
             "id": "007880252a4e3554",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md"
+                "file": "_analytics/Athena.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -96,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
+                "file": "_analytics/Athena.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
+                "file": "_analytics/Athena.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md"
+                "file": "_analytics/Athena.md"
               }
             }
           }
@@ -161,10 +163,15 @@
   "active": "007880252a4e3554",
   "lastOpenFiles": [
     "_analytics/AWS OpenSearch.md",
+    "_analytics/Athena.md",
+    "_analytics/Big Data Ingestion Pipeline.md",
+    "academy/Excalidraw/Drawing 2023-01-09 23.53.45.excalidraw.md",
+    "test/index.js~",
+    "test/index.tsx",
+    "test/index.html~",
     "Excalidraw/Drawing 2024-02-22 22.42.05.excalidraw.md",
     "Excalidraw",
     "_includes/icon-linkedin.html",
-    "_analytics/Athena.md",
     "_analytics/Kinesis Data Analytics.md",
     "aws_analytic.html",
     "test/test.js~",
