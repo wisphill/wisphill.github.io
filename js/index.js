@@ -25,19 +25,19 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                     var elements = JSON.parse(code).elements;
                     console.log(elements)
 
-
-                    const [excalidrawAPI, setExcalidrawAPI] = React.useState(null);
-                    React.useEffect(() => {
-                        if (!excalidrawAPI) {
-                            return;
-                        }
-                        const elm = excalidrawAPI.getSceneElements();
-                        excalidrawAPI.scrollToContent(elm, {
-                            fitToContent: true,
-                            animate: true
-                        })
-                    }, [excalidrawAPI]);
                     const App = () => {
+                        const [excalidrawAPI, setExcalidrawAPI] = React.useState(null);
+                        React.useEffect(() => {
+                            if (!excalidrawAPI) {
+                                return;
+                            }
+                            const elm = excalidrawAPI.getSceneElements();
+                            excalidrawAPI.scrollToContent(elm, {
+                                fitToContent: true,
+                                animate: true
+                            })
+                        }, [excalidrawAPI]);
+                        
                         var options =  {
                             initialData: {
                                 elements
