@@ -1,4 +1,5 @@
 const App = () => {
+    const [excalidrawAPI, setExcalidrawAPI] = React.useState(null);
     var options =  {
         initialData: {
             elements:  [
@@ -346,22 +347,40 @@ const App = () => {
                     "locked": false
                 }
             ]
-        }
+        },
+        excalidrawAPI: (api)=> setExcalidrawAPI(api)
     };
 
-    var i = 0
-    /// testtinggg yuuu
-    for (const p of document.querySelectorAll("p")) {
-        i++;
-        if (p.textContent.search(/!\[\[(.+)excalidraw(.+)\]\]/) !== -1) {
-            console.log(p.textContent)
 
-            var newExcalidrawBlock = document.createElement("div");
-            newExcalidrawBlock.setAttribute("id", `excalidraw-${i}`);
-            newExcalidrawBlock.innerHTML = "";
-            p.parentNode.replaceChild(newExcalidrawBlock, p);
+    React.useEffect(() => {
+        if (!excalidrawAPI) {
+            return;
         }
-    }
+        const elm = excalidrawAPI.getSceneElements();
+        excalidrawAPI.scrollToContent(elm, {
+            fitToContent: true,
+            animate: true
+        })
+        // to open the library sidebar
+        // excalidrawAPI?.resetScene()
+    }, [excalidrawAPI]);
+    // setTimeout(() => {
+    //     console.log('?????????')
+    //     console.log(excalidrawAPI?.resetScene())
+    // }, 10000)
+    // var i = 0
+    // /// testtinggg yuuu
+    // for (const p of document.querySelectorAll("p")) {
+    //     i++;
+    //     if (p.textContent.search(/!\[\[(.+)excalidraw(.+)\]\]/) !== -1) {
+    //         console.log(p.textContent)
+    //
+    //         var newExcalidrawBlock = document.createElement("div");
+    //         newExcalidrawBlock.setAttribute("id", `excalidraw-${i}`);
+    //         newExcalidrawBlock.innerHTML = "";
+    //         p.parentNode.replaceChild(newExcalidrawBlock, p);
+    //     }
+    // }
 
     return React.createElement(
         React.Fragment,

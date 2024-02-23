@@ -26,14 +26,24 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                     console.log(elements)
 
 
+                    const [excalidrawAPI, setExcalidrawAPI] = React.useState(null);
+                    React.useEffect(() => {
+                        if (!excalidrawAPI) {
+                            return;
+                        }
+                        const elm = excalidrawAPI.getSceneElements();
+                        excalidrawAPI.scrollToContent(elm, {
+                            fitToContent: true,
+                            animate: true
+                        })
+                    }, [excalidrawAPI]);
                     const App = () => {
                         var options =  {
                             initialData: {
                                 elements
                             },
                             viewModeEnabled: true,
-                            scrollToContent: true,
-                            zoom: 0.5
+                            excalidrawAPI: (api)=> setExcalidrawAPI(api)
                         };
 
                         return React.createElement(
