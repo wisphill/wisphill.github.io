@@ -1,4 +1,4 @@
-let url = 'https://raw.githubusercontent.com/0xzphil/blog/main/academy/Excalidraw/Drawing%202023-03-03%2017.25.53.excalidraw.md';
+let url = 'https://raw.githubusercontent.com/0xzphil/blog/main/collections/Excalidraw/Drawing%202023-03-03%2017.25.53.excalidraw.md';
 
 var s = "hahahahaha" +
     "" +
