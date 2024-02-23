@@ -3,15 +3,20 @@ layout: default
 permalink: aws_analytic
 ---
 <section>
-  <div class="grid t-hackcss-cards">
+  <div class="media t-hackcss-media">
     {% for analytic in site.analytics %}
-    <h2>
-      <a href="{{ analytic.url | prepend: site.baseurl }}">
-        {{ analytic.title }}
-      </a>
-    </h2>
-    <p>{{ analytic.content | markdownify }}</p>
-
+    <div class="media-body">
+      <div class="media-heading">
+          <span>{{ post.date | date_to_string }} &raquo;
+            <a href="{{ analytic.url | prepend: site.baseurl }}">
+              {{ analytic.title }}
+            </a>
+          </span>
+      </div>
+      <div class="media-content">
+        <p>{{ analytic.content | markdownify }}</p>
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
