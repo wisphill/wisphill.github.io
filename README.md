@@ -1,8 +1,6 @@
-# jekyll-theme-hackcss
+# 0xzphil blog
 
-[Dead simple CSS framework](https://hackcss.egoist.moe/) now with Jekyll.
-
-Mobile-ready, modern, stylish, simple.
+Minimalist, simple, sharing the knowledge blog with Jekyll.
 
 ## Theme modes
 
@@ -16,11 +14,11 @@ This theme comes in three modes, which could be configured in `_config.yml`.
 
 ## Installation
 
-Clone this repo. Create your own website. Easy.
-
-## Configuration
-
-See [docs](https://github.com/wemake-services/jekyll-theme-hackcss/blob/gh-pages/docs.md).
+1. Clone this repo and publish it into your Github repository
+2. Configure your Github page to the main branch and configure to build from main.
+3. The documentation should be placed on the collections directory, feel free to create more subdirectories with format `_{collection_name}` and configure the _config.yml to update the routing to each single collection.
+4. Install the Obsidian note software and its public extension Excalidraw and create Obsidian vault from the `collections` directory. Now it's ready to serve to edit the documentations and show the Excalidraw diagrams on the local machine and public all of those to the Github Pages.
+5. All deep modifications are based on your need
 
 ## License
 
