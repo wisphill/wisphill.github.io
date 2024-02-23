@@ -1,6 +1,5 @@
 ---
-name: Jane Doe
-position: Developer
+short_description: Athena is the serverless query service to analyze data store in Amazon S3
 layout: post
 ---
 

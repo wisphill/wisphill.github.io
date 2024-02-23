@@ -1,12 +1,11 @@
 ---
-name: Jane Doe
-position: Developer
+description: Amazon Opensearch is a successor to ElasticSearch and commonly to use as a complement to other database. Coupled with DynamoDB
 layout: post
 ---
 
 #aws #analytics #opensearch
 
-Amazon Opensearch is a successor to ElasticSearch and commonly to use as a complement to other database. Coupled with Dynamo, ...
+Amazon Opensearch is a successor to ElasticSearch and commonly to use as a complement to other database. Coupled with DynamoDB, ...
 
 ### Compare with DynamoDB
 - DynamoDB can search based on index.
