@@ -66,9 +66,15 @@ social:
   - service: linkedin
     username: 0xzphil
     link: https://linkedin.com/in/0xzphil/
+  - service: youtube
+    username: yuu.orenji
+    link: https://youtube.com/@yuu.orenji
+  - service: deviantart
+    username: yuulya
+    link: https://deviantart.com/yuulya
   - service: twitter
-    username: sobolevn
-    link: https://twitter.com/sobolevn
+    username: 0xzphil
+    link: https://twitter.com/0xzphil
 
 # Plugins
 gems:
