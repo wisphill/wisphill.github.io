@@ -1,3 +1,7 @@
+---
+description: "Use case: Enrich streaming data by executing quering and add to the output"
+layout: post
+---
 #aws #analytics #flink #kinesis_data_analytic 
 
 ![[Drawing 2023-03-03 18.26.12.excalidraw |660]]

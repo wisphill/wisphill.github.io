@@ -1,3 +1,7 @@
+---
+description: Glue is serverless service for extract, transform, and load (ETL) service.Use for preparing and transforming data for analytics.
+layout: post
+---
 #aws #analytics #glue #emr 
 
 Glue is serverless service for extract, transform, and load (ETL) service.

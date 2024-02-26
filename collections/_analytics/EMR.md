@@ -1,3 +1,8 @@
+---
+description: EMR stands for Elastic MapReduce and it helps for creating Hadoop Cluster for BigData to analyze and process large data.
+layout: post
+---
+
 #aws #analytics #emr
 
 EMR stands for Elastic MapReduce and it helps for creating Hadoop Cluster for BigData to analyze and process large data.

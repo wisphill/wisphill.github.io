@@ -1,3 +1,7 @@
+---
+description: Redshift is OLAP (online analytical processing) for analytic and data warehousing
+layout: post
+---
 #aws #analytics #redshift
 
 Redshift is OLAP (online analytical processing) for analytic and data warehousing
