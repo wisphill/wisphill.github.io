@@ -36,10 +36,25 @@ navigation:
     url: /examples
   - text: AWS Analytic
     url: /aws_analytic
+  - text: AWS VPC (WIP)
+    url: /aws_vpc
+  - text: AWS ASG (WIP)
+    url: /aws_asg
+  - text: AWS Container (WIP)
+    url: /aws_container
 
 collections_dir: collections
 collections:
   analytics:
+    output: true
+    permalink: /:collection/:path/
+  vpc:
+    output: true
+    permalink: /:collection/:path/
+  asg:
+    output: true
+    permalink: /:collection/:path/
+  aws_container:
     output: true
     permalink: /:collection/:path/
 
