@@ -2,7 +2,6 @@
 description: It is serverless business intelligence service to create interactive dashboard for business and analytic.
 layout: post
 ---
-
 #aws #analytics #quicksight
 
 It is serverless business intelligence service to create interactive dashboard for business and analytic.

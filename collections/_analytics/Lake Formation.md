@@ -2,7 +2,6 @@
 description: LakeFormation is central place to have all data for analytic purpose.
 layout: post
 ---
-
 #aws #analytics #datalake
 
 LakeFormation is central place to have all data for analytic purpose.
@@ -11,5 +10,6 @@ LakeFormation is central place to have all data for analytic purpose.
 - Fine-grained access control for row and column level for application
 - Built on top by Glue.
 
+### Diagram
 ![[Drawing 2023-03-03 18.11.44.excalidraw|660]]
 

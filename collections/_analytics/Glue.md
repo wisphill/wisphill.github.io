@@ -6,10 +6,7 @@ layout: post
 
 Glue is serverless service for extract, transform, and load (ETL) service.
 Use for preparing and transforming data for analytics.
-
-
 ### Integrate with Data warehouse
-
 ![[Drawing 2023-03-03 17.49.11.excalidraw|600]]
 
 ### Integrate with Athena for analytics

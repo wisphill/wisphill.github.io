@@ -4,6 +4,7 @@ layout: post
 ---
 #aws #analytics #flink #kinesis_data_analytic 
 
+### Main diagram
 ![[Drawing 2023-03-03 18.26.12.excalidraw |660]]
 
 ### Kinesis Data Analytic
