@@ -40,3 +40,7 @@ $on-palm:          768px;
 .excalidraw .App-bottom-bar > .Island {
   display: none !important;
 }
+
+.t-hackcss-social+.t-hackcss-social {
+  padding: 0px !important;
+}
