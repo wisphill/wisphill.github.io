@@ -25,6 +25,6 @@ Notes: Can use Reserved Instances for cost-saving
 ![[Drawing 2023-03-03 17.07.51.excalidraw|600]]
 
 ### Redshift Spectrum
+![[Drawing 2023-03-03 17.13.04.excalidraw|600]]
 Analyze data from S3 without importing to Redshift. Require more power to run.
 - Compare with Athena query, it's cost less effort & cost to implement if already using Redshift.
-![[Drawing 2023-03-03 17.13.04.excalidraw|600]]
