@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: The Yuu blog
+title: Phil's Blog - Knowledge Sharing
 description: > # this means to ignore newlines until "baseurl:"
   Here is my documentation warehouse, what I learnt and what I want to share to you
 repository: https://github.com/0xzphil/blog
