@@ -9,18 +9,18 @@ permalink: aws_vpc
   </p>
 </section>
 <section>
-  {% for aws_vpc in site.aws_vpc %}
+  {% for value in site.aws_vpc %}
     <div class="media t-hackcss-media">
       <div class="media-body">
         <div class="media-heading">
           <span>&raquo;
-            <a href="{{ aws_vpc.url | prepend: site.baseurl }}">
-              {{ aws_vpc.title }}
+            <a href="{{ value.url | prepend: site.baseurl }}">
+              {{ value.title }}
             </a>
           </span>
         </div>
         <div class="media-content">
-          {{ aws_vpc.description }}
+          {{ value.description }}
         </div>
       </div>
     </div>
