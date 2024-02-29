@@ -15,7 +15,7 @@ permalink: aws_analytic
         <div class="media-heading">
           <span>{{ analytic.date }} &raquo;
             <a href="{{ analytic.url | prepend: site.baseurl }}">
-              {{ analytic.path |remove: analytic.collection' }} ---- {{ site.collections.directory }}
+              {{ analytic.path |remove: analytic.collection' }} ---- {{ site.collections.relative_directory }}
             </a>
           </span>
         </div>
