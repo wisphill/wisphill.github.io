@@ -1,29 +1,5 @@
 ---
-layout: default
+layout: collection_list
 permalink: aws_analytic
+site_collections: site.analytics
 ---
-<section>
-  <h1>AWS Analytic</h1>
-  <p>
-    AWS provides the multiple services for the analytic purpose, here is some important documentation to remember
-  </p>
-</section>
-<section>
-  {% for analytic in site.analytics %}
-  {% assign collection_path = "_" | append: analytic.collection | append: '/' %}
-    <div class="media t-hackcss-media">
-      <div class="media-body">
-        <div class="media-heading">
-          <span>&raquo;
-            <a href="{{ analytic.url | prepend: site.baseurl }}">
-              {{ analytic.path | remove: collection_path |remove: '.md'  }}
-            </a>
-          </span>
-        </div>
-        <div class="media-content">
-          {{ analytic.description }}
-        </div>
-      </div>
-    </div>
-  {% endfor %}
-</section>
