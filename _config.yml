@@ -32,7 +32,7 @@ navigation:
     url: /
   - text: AWS Analytic
     url: /aws_analytic
-  - text: AWS VPC (WIP)
+  - text: AWS VPC
     url: /aws_vpc
   - text: AWS ASG (WIP)
     url: /aws_asg
