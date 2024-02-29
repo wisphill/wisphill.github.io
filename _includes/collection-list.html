@@ -5,7 +5,7 @@
   </p>
 </section>
 <section>
-  {% assign collection = site.collections | where: "label", page.permalink | first %}
+  {% assign collection = (site.collections | where: "label", page.permalink | first) %}
   {% for item in include.site_collections %}
   {% assign collection_path = "_" | append: item.collection | append: '/' %}
   <div class="media t-hackcss-media">
