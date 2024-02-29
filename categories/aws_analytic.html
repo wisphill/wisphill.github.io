@@ -13,9 +13,9 @@ permalink: aws_analytic
     <div class="media t-hackcss-media">
       <div class="media-body">
         <div class="media-heading">
-          <span>{{ analytic.date }} &raquo;
+          <span>&raquo;
             <a href="{{ analytic.url | prepend: site.baseurl }}">
-              {{ analytic.path |remove: analytic.collection' }} ---- {{ site.collections.relative_directory }}
+              {{ analytic.path |remove: analytic.collection |remove: '_' |remove: '.md'  }}
             </a>
           </span>
         </div>
