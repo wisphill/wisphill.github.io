@@ -5,19 +5,20 @@
   </p>
 </section>
 <section>
-  {% for value in include.site_collections %}
-  {% assign collection_path = "_" | append: value.collection | append: '/' %}
+  {% assign collection = site.collections | where: "label", page.permalink | first %}
+  {% for item in collection %}
+  {% assign collection_path = "_" | append: item.collection | append: '/' %}
   <div class="media t-hackcss-media">
     <div class="media-body">
       <div class="media-heading">
           <span>&raquo;
-            <a href="{{ value.url | prepend: site.baseurl }}">
-              {{ value.path | remove: collection_path |remove: '.md'  }}
+            <a href="{{ item.url | prepend: site.baseurl }}">
+              {{ item.path | remove: collection_path |remove: '.md'  }}
             </a>
           </span>
       </div>
       <div class="media-content">
-        {{ value.description }}
+        {{ item.description }}
       </div>
     </div>
   </div>
