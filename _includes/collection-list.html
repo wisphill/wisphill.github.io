@@ -5,8 +5,8 @@
   </p>
 </section>
 <section>
-  {% assign collection = (site.collections | where: "label", page.permalink | first | first) %}
-  {% for item in collection %}
+  {% assign collection222 = (site.collections | where: "label", page.permalink | first) %}
+  {% for item in collection222 %}
   {% assign collection_path = "_" | append: item.collection | append: '/' %}
   <div class="media t-hackcss-media">
     <div class="media-body">
@@ -23,4 +23,5 @@
     </div>
   </div>
   {% endfor %}
+  Tesstitngngngngng {{ collection222 | first }}
 </section>
