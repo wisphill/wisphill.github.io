@@ -1,3 +1,8 @@
+---
+description: Network ACL is kinda similar with the security group, it will help to define and add another layer to allow or deny traffic that comes to the subnet.
+layout: post
+---
+
 #aws #nacl #sg #security_group #network
 https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html#VPC_Security_Comparison
 

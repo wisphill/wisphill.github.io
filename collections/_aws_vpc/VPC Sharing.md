@@ -1,3 +1,8 @@
+---
+description: VPC sharing is the part of Resource access manager
+layout: post
+---
+
 #aws #vpc #vpc_sharing #resource_access_manager
 
 VPC sharing is the part of Resource access manager

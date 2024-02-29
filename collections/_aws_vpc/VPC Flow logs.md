@@ -1,3 +1,8 @@
+---
+description: "**VPC Flow log is the AWS feature** to allow to capture the traffic informations going to and from the network interfaces in the VPC."
+layout: post
+---
+
 #vpc #flow_log #flow 
 https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html
 

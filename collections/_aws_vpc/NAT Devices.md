@@ -1,3 +1,8 @@
+---
+description: NAT Devices is the device to allow resources in the private subnet to connect to public internet, other VPCs, or on-premise networks
+layout: post
+---
+
 #aws #vpc #nat 
 
 NAT Devices is the device to allow resources in the private subnet to connect to public internet, other VPCs, or on-premise networks

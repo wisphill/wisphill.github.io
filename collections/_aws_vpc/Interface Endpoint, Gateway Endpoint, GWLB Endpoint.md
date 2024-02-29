@@ -1,3 +1,8 @@
+---
+description: Differences between the interface Endpoint, Gateway Endpoint, GWLB Endpoint
+layout: post
+---
+
 #aws #vpc #interface-endpoint #vpce #gateway-endpoint #gwlb-endpoint
 
 | Interface Endpoint                                       | Gateway Endpoint                                                    | GWLB Endpoint     |

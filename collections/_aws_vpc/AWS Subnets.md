@@ -1,3 +1,8 @@
+---
+description: "**Subnets is the sub range of the ip addresses**. AWS reserve 5 ip address and cannot be used by EC2 instances"
+layout: post
+---
+
 #aws #subnets #vpc 
 
 **Subnets is the sub range of the ip addresses**. AWS reserve 5 ip address and cannot be used by EC2 instances

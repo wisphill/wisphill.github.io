@@ -1,3 +1,8 @@
+---
+description: In the case we want to reduce administrative overhead and the cost while providing shared access to services requires by workloads in each of VPCs, we can use sharedservice VPC
+layout: post
+---
+
 #aws #vpc #design-vpc #sharedservices
 
 In the case we want to reduce administrative overhead and the cost while providing shared access to services requires by workloads in each of VPCs, we can use sharedservice VPC

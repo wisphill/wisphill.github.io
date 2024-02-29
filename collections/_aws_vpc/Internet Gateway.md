@@ -1,3 +1,8 @@
+---
+description: Internet gateway is a VPC component, that is horizontal scaled, that allow connections between VPC and public internet,
+layout: post
+---
+
 #aws #internet_gateway #gateway #subnets 
 
 https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html

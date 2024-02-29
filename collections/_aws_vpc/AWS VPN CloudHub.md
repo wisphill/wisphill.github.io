@@ -1,3 +1,8 @@
+---
+description: AWS VPN CloudHub uses an AWS VPC with multiple customer gateways in a setup
+layout: post
+---
+
 #network #networking #aws #site_to_site #customer_gateway #gateway  #cloudhub #aws #vpc 
 
 AWS VPN CloudHub uses an AWS VPC with multiple customer gateways in a setup.

@@ -1,3 +1,8 @@
+---
+description: CIDR is **a method** for allocation IP addresses, helpful for defining the ip address range**Classless inter-domain routing**
+layout: post
+---
+
 #aws #vpc #networking #cidr #ip_address
 
 CIDR is **a method** for allocation IP addresses, helpful for defining the ip address range

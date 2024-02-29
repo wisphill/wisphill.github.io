@@ -1,3 +1,8 @@
+---
+description: Some important notes about the networking cost on AWS
+layout: post
+---
+
 #aws #cost #network #vpc #networking 
 
 ### Incoming traffic

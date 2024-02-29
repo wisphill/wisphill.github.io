@@ -1,3 +1,8 @@
+---
+description: Route tables is a table that helps to define all routes, and determine where the traffic from the subnet or gateway will be directed.
+layout: post
+---
+
 #aws #route #route_tables
 
 ## Route tables

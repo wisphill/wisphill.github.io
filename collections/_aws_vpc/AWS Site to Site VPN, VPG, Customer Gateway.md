@@ -1,3 +1,8 @@
+---
+description: AWS Site to Site VPC as known as IPsec VPN connection is a way to setup and establish the connection between VPC and other customer resources.
+layout: post
+---
+
 #aws #vpc #network #networking #site_to_site #customer_gateway #gateway #ip_sec_vpn 
 
 AWS Site to Site VPC as known as IPsec VPN connection is a way to setup and establish the connection between VPC and other customer resources. Customer server can be an on-premise instance like integration with a data center.

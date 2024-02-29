@@ -1,3 +1,8 @@
+---
+description: In the case we have multiple VPCs, and peer them each others, so the network topology will be more complicated. So AWS Transit Gateway allows them to connect together.
+layout: post
+---
+
 #aws #vpc #transit #transit_gateway
 
 In the case we have multiple VPCs, and peer them each others, so the network topology will be more complicated. So AWS Transit Gateway allows them to connect together.

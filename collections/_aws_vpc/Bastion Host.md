@@ -1,3 +1,8 @@
+---
+description: A bastion host is special-purpose computer on a network that is designed and configured to withstand attacks.
+layout: post
+---
+
 #aws #vpc #bastion_host
 
 A bastion host is special-purpose computer on a network that is designed and configured to withstand attacks.

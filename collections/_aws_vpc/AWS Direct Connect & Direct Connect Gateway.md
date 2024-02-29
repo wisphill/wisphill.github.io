@@ -2,7 +2,6 @@
 description: AWS Direct Connect (DX) provides a dedicated private connection between remote network to the AWS VPC
 layout: post
 ---
-
 #aws #vpc #direct #connect #direct_connect
 
 AWS Direct Connect (DX) provides a dedicated private connection between remote network to the AWS VPC

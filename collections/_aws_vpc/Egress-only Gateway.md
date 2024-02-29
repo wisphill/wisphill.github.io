@@ -1,3 +1,8 @@
+---
+description: Egress only gateway is the gateway that allows traffic from services that's assigned with ipv6 address to connect to the public internet but prevents access from outside to VPC.
+layout: post
+---
+
 #egress-only #aws #gateway 
 
 Egress only gateway is the gateway that allows traffic from services that's assigned with ipv6 address to connect to the public internet but prevents access from outside to VPC.

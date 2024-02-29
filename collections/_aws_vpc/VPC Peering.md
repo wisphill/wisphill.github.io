@@ -1,3 +1,8 @@
+---
+description: VPC peering is a networking connection between two VPCs, and the traffics between those VPC is private. VPC peering can be created between 2 VPC in the same region of different regions and in another AWS accounts.
+layout: post
+---
+
 #aws #peering #vpc 
 
 https://docs.aws.amazon.com/vpc/latest/userguide/vpc-peering.html

@@ -1,5 +1,9 @@
-#aws #vpc  #mirroring #traffic
+---
+description: VPC traffic mirroring is a feature/mechanism that allows to capture and inspect network traffic in the VPC.
+layout: post
+---
 
+#aws #vpc  #mirroring #traffic
 https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html
 
 VPC traffic mirroring is a feature/mechanism that allows to capture and inspect network traffic in the VPC.

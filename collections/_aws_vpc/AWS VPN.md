@@ -1,3 +1,8 @@
+---
+description: Virtual Private gateway is the endpoint of VPN connection on AWS
+layout: post
+---
+
 #aws #vpc #vpn 
 
 ### Terminologies
