@@ -10,12 +10,13 @@ permalink: aws_analytic
 </section>
 <section>
   {% for analytic in site.analytics %}
+  {% assign collection_path = "_" | concat: analytic.collection | concat: '/' %}
     <div class="media t-hackcss-media">
       <div class="media-body">
         <div class="media-heading">
           <span>&raquo;
             <a href="{{ analytic.url | prepend: site.baseurl }}">
-              {{ analytic.path |remove: analytic.collection |remove: '_' |remove: '.md'  }}
+              {{ analytic.path | remove: collection_path |remove: '.md'  }}
             </a>
           </span>
         </div>
