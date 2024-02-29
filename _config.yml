@@ -47,7 +47,7 @@ collections:
   aws_vpc:
     output: true
     permalink: /:collection/:path/
-  asg:
+  aws_asg:
     output: true
     permalink: /:collection/:path/
   aws_container:
