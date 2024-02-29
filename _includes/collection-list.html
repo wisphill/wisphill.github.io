@@ -6,7 +6,7 @@
 </section>
 <section>
   {% assign collection = site.collections | where: "label", page.permalink | first %}
-  {% for item in collection %}
+  {% for item in include.site_collections %}
   {% assign collection_path = "_" | append: item.collection | append: '/' %}
   <div class="media t-hackcss-media">
     <div class="media-body">
