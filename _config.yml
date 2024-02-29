@@ -34,9 +34,9 @@ navigation:
     url: /aws_analytic
   - text: AWS VPC
     url: /aws_vpc
-  - text: AWS ASG (WIP)
+  - text: AWS ASG
     url: /aws_asg
-  - text: AWS Container (WIP)
+  - text: AWS Container
     url: /aws_container
 
 collections_dir: collections

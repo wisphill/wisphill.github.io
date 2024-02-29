@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: aws_container
+---
+<section>
+  <h1>AWS Container</h1>
+  <p>
+    Some documentations about the AWS Container
+  </p>
+</section>
+<section>
+  {% for value in site.aws_container %}
+    <div class="media t-hackcss-media">
+      <div class="media-body">
+        <div class="media-heading">
+          <span>&raquo;
+            <a href="{{ value.url | prepend: site.baseurl }}">
+              {{ value.title }}
+            </a>
+          </span>
+        </div>
+        <div class="media-content">
+          {{ value.description }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
