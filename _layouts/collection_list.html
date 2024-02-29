@@ -8,7 +8,7 @@ layout: default
   </p>
 </section>
 <section>
-  {% for value in layout.site_collections %}
+  {% for value in page.site_collections %}
   {% assign collection_path = "_" | append: value.collection | append: '/' %}
   <div class="media t-hackcss-media">
     <div class="media-body">
