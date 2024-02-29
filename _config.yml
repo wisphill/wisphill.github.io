@@ -41,7 +41,7 @@ navigation:
 
 collections_dir: collections
 collections:
-  analytics:
+  aws_analytic:
     output: true
     permalink: /:collection/:path/
   aws_vpc:
