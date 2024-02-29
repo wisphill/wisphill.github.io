@@ -30,10 +30,6 @@ email: fizz.uet@gmail.com
 navigation:
   - text: Home
     url: /
-  - text: Docs
-    url: /docs
-  - text: Examples
-    url: /examples
   - text: AWS Analytic
     url: /aws_analytic
   - text: AWS VPC (WIP)
