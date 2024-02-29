@@ -7,7 +7,7 @@
 <section>
   {% assign collection222 = (site.collections | where: "label", page.permalink | first) %}
   {% assign collection3333 = collection222 | first %}
-  {% for item in collection222[1] %}
+  {% for item in site[page.permalink] %}
   {% assign collection_path = "_" | append: item.collection | append: '/' %}
   <div class="media t-hackcss-media">
     <div class="media-body">
