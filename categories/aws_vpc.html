@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: aws_vpc
+---
+<section>
+  <h1>AWS VPC</h1>
+  <p>
+    There are many configurations and related use cases with the AWS VPC
+  </p>
+</section>
+<section>
+  {% for aws_vpc in site.aws_vpc %}
+    <div class="media t-hackcss-media">
+      <div class="media-body">
+        <div class="media-heading">
+          <span>&raquo;
+            <a href="{{ analytic.url | prepend: site.baseurl }}">
+              {{ aws_vpc.title }}
+            </a>
+          </span>
+        </div>
+        <div class="media-content">
+          {{ aws_vpc.description }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</section>
