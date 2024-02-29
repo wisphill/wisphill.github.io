@@ -1,0 +1,25 @@
+<section>
+  <h1>AWS Analytic</h1>
+  <p>
+    AWS provides the multiple services for the analytic purpose, here is some important documentation to remember
+  </p>
+</section>
+<section>
+  {% for value in include.site_collections %}
+  {% assign collection_path = "_" | append: value.collection | append: '/' %}
+  <div class="media t-hackcss-media">
+    <div class="media-body">
+      <div class="media-heading">
+          <span>&raquo;
+            <a href="{{ value.url | prepend: site.baseurl }}">
+              {{ value.path | remove: collection_path |remove: '.md'  }}
+            </a>
+          </span>
+      </div>
+      <div class="media-content">
+        {{ value.description }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>
