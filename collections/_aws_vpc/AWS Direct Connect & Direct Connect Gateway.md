@@ -1,8 +1,13 @@
+---
+description: AWS Direct Connect (DX) provides a dedicated private connection between remote network to the AWS VPC
+layout: post
+---
+
 #aws #vpc #direct #connect #direct_connect
 
 AWS Direct Connect (DX) provides a dedicated private connection between remote network to the AWS VPC
 
-We need to setup 
+We need to setup
 - Direct Connection and it is using AWS Direct connect locations
 - VGW
 - With direct connection we can connect to all public resources (s3) and some private resources (EC2) on the same direct connection.
@@ -40,5 +45,4 @@ We need to setup
 - Setting up another DX Connection for backup can be expensive. So for another solution, we can setup Site to Site VPN Connection between AWS VPC and the remote network as a backup connection.
 
 ![[Drawing 2023-01-14 18.43.21.excalidraw|600x250]]
-  
-  
+
