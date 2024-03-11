@@ -77,6 +77,45 @@ collections:
   aws_vpc:
     output: true
     permalink: /:collection/:path/
+  aws_cf:
+    output: true
+    permalink: /:collection/:path/
+  aws_cloudwatch_monitoring:
+    output: true
+    permalink: /:collection/:path/
+  aws_db:
+    output: true
+    permalink: /:collection/:path/
+  aws_dr:
+    output: true
+    permalink: /:collection/:path/
+  aws_ec2:
+    output: true
+    permalink: /:collection/:path/
+  aws_guard_firewall:
+    output: true
+    permalink: /:collection/:path/
+  aws_machine_learning:
+    output: true
+    permalink: /:collection/:path/
+  aws_rds:
+    output: true
+    permalink: /:collection/:path/
+  aws_route53:
+    output: true
+    permalink: /:collection/:path/
+  aws_s3:
+    output: true
+    permalink: /:collection/:path/
+  aws_serverless:
+    output: true
+    permalink: /:collection/:path/
+  aws_sqs:
+    output: true
+    permalink: /:collection/:path/
+  aws_storage:
+    output: true
+    permalink: /:collection/:path/
   aws_asg:
     output: true
     permalink: /:collection/:path/
