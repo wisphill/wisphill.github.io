@@ -83,6 +83,9 @@ collections:
   aws_container:
     output: true
     permalink: /:collection/:path/
+  programming:
+    output: true
+    permalink: /:collection/:path/
 
 projects:
   - name: git-secret
