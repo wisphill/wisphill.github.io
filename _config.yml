@@ -30,6 +30,8 @@ email: fizz.uet@gmail.com
 navigation:
   - text: Home
     url: /
+  - text: Programming
+    url: /programming
   - text: AWS Analytic
     url: /aws_analytic
   - text: AWS VPC
@@ -38,6 +40,34 @@ navigation:
     url: /aws_asg
   - text: AWS Container
     url: /aws_container
+  - text: AWS CloudFront
+    url: /aws_cf
+  - text: AWS Cloudwatch monitoring
+    url: /aws_cloudwatch_monitoring
+  - text: AWS Database
+    url: /aws_db
+  - text: AWS Disaster Recovery
+    url: /aws_dr
+  - text: AWS EC2
+    url: /aws_ec2
+  - text: AWS Guard Firewall
+    url: /aws_guard_firewall
+  - text: AWS IAM
+    url: /aws_iam
+  - text: AWS Machine Learning
+    url: /aws_machine_learning
+  - text: AWS RDS
+    url: /aws_rds
+  - text: AWS Route53
+    url: /aws_route53
+  - text: AWS S3
+    url: /aws_s3
+  - text: AWS Serverless
+    url: /aws_serverless
+  - text: AWS SQS
+    url: /aws_sqs
+  - text: AWS Storage
+    url: /aws_storage
 
 collections_dir: yuu_academy
 collections:
