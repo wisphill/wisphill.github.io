@@ -1,4 +1,4 @@
-# 0xzphil blog
+# wisphill blog
 
 Minimalist, simple, sharing the knowledge blog with Jekyll.
 
@@ -6,7 +6,7 @@ Minimalist, simple, sharing the knowledge blog with Jekyll.
 
 With Excalidraw plugin, it can show some diagrams on the documentation page
 
-![Markdown](https://raw.githubusercontent.com/0xzphil/blog/main/images/sample.png)
+![Markdown](https://raw.githubusercontent.com/wisphill/blog/main/images/sample.png)
 
 ## Installation
 
