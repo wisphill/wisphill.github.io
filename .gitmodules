@@ -1,0 +1,3 @@
+[submodule "yuu_academy"]
+	path = yuu_academy
+	url = https://github.com/wisphill/yuu_academy

@@ -39,7 +39,7 @@ navigation:
   - text: AWS Container
     url: /aws_container
 
-collections_dir: collections
+collections_dir: yuu_academy
 collections:
   aws_analytic:
     output: true
