@@ -1,1 +1,0 @@
-https://acloudxpert.com/aws/
