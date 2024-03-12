@@ -346,7 +346,12 @@ const App = () => {
                     "link": null,
                     "locked": false
                 }
-            ]
+            ],
+            appState: {
+                viewModeEnabled: true,
+
+                viewBackgroundColor: "#a5d8ff"
+            },
         },
         excalidrawAPI: (api)=> setExcalidrawAPI(api)
     };

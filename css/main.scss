@@ -4,7 +4,8 @@
 @charset "utf-8";
 
 
-$main_color: #ff4d67;
+$main_color: #fc6d7f;
+$background_color: #FAF8F6FF;
 
 // Our variables
 $spacing-unit:     10px;
@@ -29,6 +30,9 @@ a:hover {
   background: $main_color;
 }
 
+.hack {
+  background: $background_color;
+}
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {

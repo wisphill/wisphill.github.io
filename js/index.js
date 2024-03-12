@@ -32,9 +32,12 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
 
                         var options =  {
                             initialData: {
-                                elements
+                                elements,
+                                appState: {
+                                    viewModeEnabled: true,
+                                    viewBackgroundColor: "#FAF8F6FF"
+                                },
                             },
-                            viewModeEnabled: true,
                             excalidrawAPI: (api)=> setExcalidrawAPI(api)
                         };
 
