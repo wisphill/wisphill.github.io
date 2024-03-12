@@ -16,11 +16,6 @@ $icon-size:        15px;
 // Sizes
 $on-palm:          768px;
 
-
-body {
-  font-size: 1.05rem !important;
-}
-
 a {
   color: $main_color;
   border-color: $main_color;
@@ -34,10 +29,10 @@ a:hover {
   background: $background_color;
 
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   h3 {
     font-size: 1.05rem;
