@@ -4,7 +4,8 @@
 @charset "utf-8";
 
 
-$main_color: #DA3E3E;
+$main_color: #ff4d67;
+
 // Our variables
 $spacing-unit:     10px;
 $image-size:       50px;
@@ -15,6 +16,9 @@ $icon-size:        15px;
 $on-palm:          768px;
 
 
+body {
+  font-size: 1.05rem !important;
+}
 
 a {
   color: $main_color;
@@ -56,7 +60,6 @@ a:hover {
 
 .label_box {
   display: inline-block;
-  border-radius: 5px;
   border: 1px solid;
   padding: 0px 5px 0px 5px;
   margin: 2px 0px 2px 0px;
