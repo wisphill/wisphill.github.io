@@ -47,7 +47,7 @@ navigation:
   - text: AWS Database
     url: /aws_db
   - text: AWS Disaster Recovery
-    url: /aws_dr
+    url: /aws_disaster_recovery
   - text: AWS EC2
     url: /aws_ec2
   - text: AWS Guard Firewall
@@ -80,13 +80,16 @@ collections:
   aws_cf:
     output: true
     permalink: /:collection/:path/
+  aws_iam:
+    output: true
+    permalink: /:collection/:path/
   aws_cloudwatch_monitoring:
     output: true
     permalink: /:collection/:path/
   aws_db:
     output: true
     permalink: /:collection/:path/
-  aws_dr:
+  aws_disaster_recovery:
     output: true
     permalink: /:collection/:path/
   aws_ec2:
