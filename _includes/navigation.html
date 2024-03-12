@@ -2,27 +2,23 @@
   <h2 class="t-hackcss-navigation-heading">Menu</h2>
 
   <nav class="menu" role="menubar">
-    {% assign url = page.url|remove:'index.html' %}
-    {% for link in site.navigation %}
-      <a class="menu-item {% if url == link.url %}active{% endif %}"
-        role="menuitem" href="{{ link.url | prepend: site.baseurl }}" title="{{ link.title }}">
-        {{ link.text }} <div class="pull-right">»</div>
-      </a>
+    <a class="menu-item {% if url == link.url %}active{% endif %}"
+       role="menuitem" href="{{ '/' | prepend: site.baseurl }}" title="Home">
+      home
+    </a>
+    {% for link in site.data.category %}
+    <a class="menu-item {% if url == link.url %}active{% endif %}"
+       role="menuitem" href="{{ link.url | prepend: site.baseurl | append: '/' |append: link.label }}" title="{{ link.title }}">
+      {{ link.value }}
+    </a>
+
+    {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains link.value" %}
+    <div>
+      {% for link in filtered_collections %}
+      <a href="{{ link.url | prepend: site.baseurl | append: '/' |append: link.label }}" class="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm">{{ link.label }}</a>
+      {% endfor %}
+    </div>
     {% endfor %}
   </nav>
-
-  <div class="container mx-auto p-6">
-    <div class="bg-white p-6 rounded-lg shadow-lg">
-      <h2 class="text-lg font-semibold mb-4">Tag Cloud</h2>
-      <div class="flex flex-wrap gap-2">
-        <a href="#" class="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm">Technology</a>
-        <a href="#" class="bg-green-200 hover:bg-green-300 py-1 px-2 rounded-lg text-sm">Programming</a>
-        <a href="#" class="bg-yellow-200 hover:bg-yellow-300 py-1 px-2 rounded-lg text-sm">Web Development</a>
-        <a href="#" class="bg-indigo-200 hover:bg-indigo-300 py-1 px-2 rounded-lg text-sm">Design</a>
-        <a href="#" class="bg-purple-200 hover:bg-purple-300 py-1 px-2 rounded-lg text-sm">AI</a>
-        <a href="#" class="bg-pink-200 hover:bg-pink-300 py-1 px-2 rounded-lg text-sm">Machine Learning</a>
-      </div>
-    </div>
-  </div>
 
 </div>
