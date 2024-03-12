@@ -10,6 +10,8 @@ _site/
 .sass-cache
 *.css.map
 
+node_modules
+
 #####=== OSX ===#####
 .DS_Store
 .AppleDouble
