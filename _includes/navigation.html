@@ -1,24 +1,27 @@
 <div class="t-hackcss-navigation">
   <h2 class="t-hackcss-navigation-heading">Menu</h2>
+  {% assign url = page.url|remove:'index.html' %}
 
   <nav class="menu" role="menubar">
     <a class="menu-item {% if url == link.url %}active{% endif %}"
        role="menuitem" href="{{ '/' | prepend: site.baseurl }}" title="Home">
       home
     </a>
-    {% for link in site.data.category %}
-    <a class="menu-item {% if url == link.url %}active{% endif %}"
-       role="menuitem" href="{{ link.url | prepend: site.baseurl | append: '/' |append: link.label }}" title="{{ link.title }}">
-      {{ link.value }}
+    {% for category in site.data.category %}
+    <a class="menu-item {% if url contains category.value %}active{% endif %}"
+       role="menuitem">
+      {{ category.value }}
     </a>
 
-    {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains link.value" %}
-    <div>
-      {% for link in filtered_collections %}
-      <a href="{{ link.url | prepend: site.baseurl | append: '/' |append: link.label }}" class="bg-blue-200 hover:bg-blue-300 py-1 px-2 rounded-lg text-sm">{{ link.label }}</a>
+    {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains category.value" %}
+    <div class="group_label">
+      {% for collection in filtered_collections %}
+      <a href="{{ collection.url | prepend: site.baseurl | append: '/' |append: collection.label }}"
+         class="label_box {% if url contains collection.label %}active{% endif %}">
+        {{ collection.label | replace: 'aws', ''  | replace: '_', ' ' }}
+      </a>
       {% endfor %}
     </div>
     {% endfor %}
   </nav>
-
 </div>

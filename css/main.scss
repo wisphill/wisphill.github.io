@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 
-
+$main_color: #BD2E2E;
 // Our variables
 $spacing-unit:     10px;
 $image-size:       50px;
@@ -15,6 +15,15 @@ $icon-size:        15px;
 $on-palm:          768px;
 
 
+
+a {
+  color: $main_color;
+  border-color: $main_color;
+}
+
+a:hover {
+  background: $main_color;
+}
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -44,3 +53,24 @@ $on-palm:          768px;
 .t-hackcss-social+.t-hackcss-social {
   padding: 0px !important;
 }
+
+.label_box {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid;
+  padding: 0px 5px 0px 5px;
+  margin: 2px 0px 2px 0px;
+  line-height: 1.8rem;
+}
+
+.label_box.active{
+  background: $main_color;
+  color: white;
+}
+
+.group_label {
+  line-height: 2rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
