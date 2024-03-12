@@ -32,6 +32,16 @@ a:hover {
 
 .hack {
   background: $background_color;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.05rem;
+  }
 }
 // Use media queries like this:
 // @include media-query($on-palm) {
