@@ -5,7 +5,7 @@
   <nav class="menu" role="menubar">
     <a class="menu-item {% if url == link.url %}active{% endif %}"
        role="menuitem" href="{{ '/' | prepend: site.baseurl }}" title="Home">
-      home
+      _home
     </a>
     {% for category in site.data.category %}
     <a class="menu-item {% if url contains category.value %}active{% endif %}"
