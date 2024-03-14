@@ -10,7 +10,7 @@
     {% for category in site.data.category %}
     <a class="menu-item {% if url contains category.value %}active{% endif %}"
        role="menuitem">
-      {{ category.value }}
+      _{{ category.value }}
     </a>
 
     {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains category.value" %}
