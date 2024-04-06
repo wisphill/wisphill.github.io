@@ -9,7 +9,7 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
-        let url = `https://raw.githubusercontent.com/wisphill/yuu_academy/main/Excalidraw/${excalidrawFileNameMD}`;
+        let url = `https://cdn.jsdelivr.net/gh/wisphill/yuu_academy/main/Excalidraw/${excalidrawFileNameMD}`;
         fetch(url)
             .then(res => {
                 res.text().then(r => {
