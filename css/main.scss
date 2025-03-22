@@ -64,10 +64,13 @@ a:hover {
   display: none !important;
 }
 
+.excalidraw {
+  border: 1px dashed;
+  border-radius: 10px;
+}
+
 .excalidraw-canvas-wrapper {
   margin-bottom: 10px;
-  border: 1px dashed $main_color;
-  border-radius: 10px;
 }
 
 .t-hackcss-social+.t-hackcss-social {
