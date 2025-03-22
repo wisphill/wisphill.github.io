@@ -108,13 +108,15 @@ a:hover {
   margin-left: 5px;
   animation: blink 1s infinite;
 }
+.hack h1 {
+  overflow: visible;
+}
 
 .hack h1:after {
-  content: "=" !important;
+  content: "=";
   overflow: hidden;
   display: inline-block;
   white-space: nowrap;
-  width: 0;
   animation: processing 10s infinite steps(10);
 }
 
