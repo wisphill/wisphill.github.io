@@ -66,6 +66,8 @@ a:hover {
 
 .excalidraw-canvas-wrapper {
   margin-bottom: 10px;
+  border: 1px dashed $main_color;
+  border-radius: 10px;
 }
 
 .t-hackcss-social+.t-hackcss-social {
