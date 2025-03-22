@@ -7,6 +7,7 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
 
         var newExcalidrawBlock = document.createElement("div");
         newExcalidrawBlock.setAttribute("id", `excalidraw-${index}`);
+        newExcalidrawBlock.setAttribute("class", "excalidraw-canvas-wrapper"); // Set class here
         newExcalidrawBlock.innerHTML = "";
         p.parentNode.replaceChild(newExcalidrawBlock, p);
 
