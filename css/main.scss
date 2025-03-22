@@ -109,6 +109,26 @@ a:hover {
   animation: blink 1s infinite;
 }
 
+.hack h1:after {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  width: 0;
+  animation: processing 4s infinite steps(50);
+}
+
+@keyframes processing {
+  0% {
+      width: 0;
+  }
+  50% {
+      width: 100%;
+  }
+  100% {
+      width: 0;
+  }
+}
+
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 1; }
