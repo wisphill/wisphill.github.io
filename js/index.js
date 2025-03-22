@@ -24,11 +24,36 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                             if (!excalidrawAPI) {
                                 return;
                             }
+                    
                             const elm = excalidrawAPI.getSceneElements();
-                            excalidrawAPI.scrollToContent(elm, {
-                                fitToContent: true,
-                                animate: true
-                            })
+                            if (elm.length > 0) {
+                                // Get the bounding box of all elements
+                                const boundingBox = elm.reduce(
+                                    (acc, element) => ({
+                                        minX: Math.min(acc.minX, element.x),
+                                        minY: Math.min(acc.minY, element.y),
+                                        maxX: Math.max(acc.maxX, element.x + element.width),
+                                        maxY: Math.max(acc.maxY, element.y + element.height),
+                                    }),
+                                    {
+                                        minX: Infinity,
+                                        minY: Infinity,
+                                        maxX: -Infinity,
+                                        maxY: -Infinity,
+                                    }
+                                );
+                    
+                                // Scroll to the top-left corner of the bounding box
+                                excalidrawAPI.scrollToContent(elm, {
+                                    fitToContent: false, // Don't auto-zoom or center
+                                    animate: true,
+                                    // Optionally, set a specific scroll position
+                                    scrollTo: {
+                                        x: boundingBox.minX,
+                                        y: boundingBox.minY,
+                                    },
+                                });
+                            }
                         }, [excalidrawAPI]);
 
                         var options =  {
