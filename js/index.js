@@ -16,31 +16,51 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                 res.text().then(r => {
                     var code = r.toString().match(/```json(.*)```/s)[1];
                     var elements = JSON.parse(code).elements;
-                    console.log(elements);
+                    console.log("Parsed elements:", elements);
 
                     const App = () => {
                         const [excalidrawAPI, setExcalidrawAPI] = React.useState(null);
-                        const [isReady, setIsReady] = React.useState(false); // Add isReady state
+                        const [isReady, setIsReady] = React.useState(false);
 
                         React.useEffect(() => {
+                            console.log("useEffect triggered, excalidrawAPI:", excalidrawAPI);
                             if (!excalidrawAPI) {
                                 return;
                             }
 
                             const elm = excalidrawAPI.getSceneElements();
+                            console.log("Scene elements:", elm);
+
                             if (elm.length > 0) {
-                                // Perform the scrollToContent operation
+                                console.log("Calling scrollToContent...");
                                 excalidrawAPI.scrollToContent(elm, {
                                     fitToContent: true,
-                                    animate: false, // Disable animation to make it instant
+                                    animate: false,
                                 });
 
                                 // Simulate a delay to ensure rendering and scrolling are complete
                                 setTimeout(() => {
-                                    setIsReady(true); // Set ready to true after scrolling is done
-                                }, 100); // Small delay to ensure the canvas has settled
+                                    console.log("Setting isReady to true after delay");
+                                    setIsReady(true);
+                                }, 200); // Increased delay to 200ms for safety
+                            } else {
+                                // Fallback: If no elements, still set isReady to true to avoid infinite loading
+                                console.warn("No scene elements found, setting isReady to true as fallback");
+                                setIsReady(true);
                             }
                         }, [excalidrawAPI]);
+
+                        // Fallback: If excalidrawAPI isn't set within a certain time, show the diagram anyway
+                        React.useEffect(() => {
+                            const fallbackTimer = setTimeout(() => {
+                                if (!isReady) {
+                                    console.warn("Fallback: excalidrawAPI not set in time, forcing isReady to true");
+                                    setIsReady(true);
+                                }
+                            }, 3000); // 3-second fallback
+
+                            return () => clearTimeout(fallbackTimer); // Cleanup on unmount
+                        }, [isReady]);
 
                         var options = {
                             initialData: {
@@ -50,7 +70,10 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                     viewBackgroundColor: "#FAF8F6FF",
                                 },
                             },
-                            excalidrawAPI: (api) => setExcalidrawAPI(api),
+                            excalidrawAPI: (api) => {
+                                console.log("Setting excalidrawAPI");
+                                setExcalidrawAPI(api);
+                            },
                         };
 
                         return React.createElement(
@@ -61,11 +84,9 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                 {
                                     style: { height: "500px" },
                                     onWheelCapture: (e) => {
-                                        // Stop Excalidraw from hijacking scroll
                                         e.stopPropagation();
                                     },
                                 },
-                                // Show a loading indicator until the diagram is ready
                                 !isReady &&
                                     React.createElement(
                                         "div",
@@ -79,7 +100,6 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                                         },
                                         "Loading diagram..."
                                     ),
-                                // Only render Excalidraw when ready
                                 isReady &&
                                     React.createElement(ExcalidrawLib.Excalidraw, options)
                             )
@@ -91,7 +111,10 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                     root.render(React.createElement(App));
                 });
             })
-            .then(out => console.log('Checkout this JSON! ', out))
-            .catch(err => { throw err });
+            .then(out => console.log('Fetch completed:', out))
+            .catch(err => {
+                console.error('Fetch error:', err);
+                throw err;
+            });
     }
 }
