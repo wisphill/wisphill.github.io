@@ -27,32 +27,17 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
                     
                             const elm = excalidrawAPI.getSceneElements();
                             if (elm.length > 0) {
-                                // Get the bounding box of all elements
-                                const boundingBox = elm.reduce(
-                                    (acc, element) => ({
-                                        minX: Math.min(acc.minX, element.x),
-                                        minY: Math.min(acc.minY, element.y),
-                                        maxX: Math.max(acc.maxX, element.x + element.width),
-                                        maxY: Math.max(acc.maxY, element.y + element.height),
-                                    }),
-                                    {
-                                        minX: Infinity,
-                                        minY: Infinity,
-                                        maxX: -Infinity,
-                                        maxY: -Infinity,
-                                    }
-                                );
-                    
-                                // Scroll to the top-left corner of the bounding box
+                                // Perform the scrollToContent operation
                                 excalidrawAPI.scrollToContent(elm, {
-                                    fitToContent: false, // Don't auto-zoom or center
-                                    animate: true,
-                                    // Optionally, set a specific scroll position
-                                    scrollTo: {
-                                        x: boundingBox.minX,
-                                        y: boundingBox.minY,
-                                    },
+                                    fitToContent: true,
+                                    animate: false, // Disable animation to make it instant
                                 });
+                    
+                                // Simulate a delay to ensure rendering and scrolling are complete
+                                // You can adjust the timeout duration if needed
+                                setTimeout(() => {
+                                    setIsReady(true); // Set ready to true after scrolling is done
+                                }, 100); // Small delay to ensure the canvas has settled
                             }
                         }, [excalidrawAPI]);
 
