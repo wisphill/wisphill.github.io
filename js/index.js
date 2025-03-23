@@ -119,3 +119,9 @@ for (const [index, p] of document.querySelectorAll("p").entries()) {
             });
     }
 }
+
+// hacked theme
+const paragraphs = document.querySelectorAll('.hacked-paragraph');
+paragraphs.forEach(paragraph => {
+  paragraph.setAttribute('data-text', paragraph.textContent);
+});
