@@ -130,3 +130,34 @@ const texts = document.querySelectorAll('.hero');
 texts.forEach(text => {
   text.setAttribute('data-text', text.textContent);
 });
+
+// loading animation
+function updateAnimation() {
+    const h1 = document.querySelector('.hack h1');
+    const textLength = h1.textContent.length;
+    const animationDuration = textLength / 2;
+
+    // Generate keyframes
+    let keyframes = '@keyframes processing {\n';
+    for (let i = 0; i <= textLength; i++) {
+        const percentage = i === 0 ? 0 : (i / textLength) * 100;
+        const equalSigns = '='.repeat(i);
+        keyframes += `    ${percentage}% { content: "${equalSigns}"; }\n`;
+    }
+    keyframes += '}';
+
+    // Add animation rule
+    const animationRule = `.hack h1:after { animation: processing ${animationDuration}s infinite steps(${textLength}); }`;
+
+    // Update or create stylesheet
+    let styleSheet = document.getElementById('dynamic-styles');
+    if (!styleSheet) {
+        styleSheet = document.createElement('style');
+        styleSheet.id = 'dynamic-styles';
+        document.head.appendChild(styleSheet);
+    }
+    styleSheet.textContent = keyframes + '\n' + animationRule;
+}
+
+// Run on page load
+window.onload = updateAnimation;
