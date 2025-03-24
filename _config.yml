@@ -9,8 +9,8 @@
 title: Wisp Hill - Glow of Geekery
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to my blazing vault of tech wisdom where I spark what I’ve learned and ignite ideas to share with you!
-repository: https://github.com/wisphill/blog
-baseurl: /blog  # the subpath of your site, e.g. /blog
+repository: https://github.com/wisphill/wisphill.github.io
+baseurl: /  # the subpath of your site, e.g. /blog
 url: https://wisphill.github.io  # the base hostname & protocol for your site
 
 # Build settings
