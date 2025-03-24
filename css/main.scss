@@ -16,6 +16,10 @@ $icon-size:        15px;
 // Sizes
 $on-palm:          768px;
 
+html {
+  font-size: 14px;
+}
+
 a {
   color: $main_color;
   border-color: $main_color;
