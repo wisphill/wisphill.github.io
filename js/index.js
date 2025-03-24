@@ -125,3 +125,8 @@ const paragraphs = document.querySelectorAll('.hacked-paragraph');
 paragraphs.forEach(paragraph => {
   paragraph.setAttribute('data-text', paragraph.textContent);
 });
+
+const texts = document.querySelectorAll('.hero');
+texts.forEach(text => {
+  text.setAttribute('data-text', paragraph.textContent);
+});
