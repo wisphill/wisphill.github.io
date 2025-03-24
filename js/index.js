@@ -128,5 +128,5 @@ paragraphs.forEach(paragraph => {
 
 const texts = document.querySelectorAll('.hero');
 texts.forEach(text => {
-  text.setAttribute('data-text', paragraph.textContent);
+  text.setAttribute('data-text', text.textContent);
 });
