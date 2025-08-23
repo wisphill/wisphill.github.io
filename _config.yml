@@ -20,7 +20,6 @@ sass:
   style: compressed
 
 # Theme settings
-theme_mode: markdown  # choices are: 'dark', 'standard', 'markdown'
 theme_mode: markdown # choices are: 'dark', 'standard', 'markdown'
 
 # Customizations
@@ -28,66 +27,7 @@ your_name: Phil Nguyễn
 email: fizz.uet@gmail.com
 
 collections_dir: yuu_academy
-
-collections:
-  aws_analytic:
-    output: true
-    test: 1
-    permalink: /:collection/:path/
-  aws_vpc:
-    output: true
-    permalink: /:collection/:path/
-  aws_cf:
-    output: true
-    permalink: /:collection/:path/
-  aws_iam:
-    output: true
-    permalink: /:collection/:path/
-  aws_cloudwatch_monitoring:
-    output: true
-    permalink: /:collection/:path/
-  aws_db:
-    output: true
-    permalink: /:collection/:path/
-  aws_disaster_recovery:
-    output: true
-    permalink: /:collection/:path/
-  aws_ec2:
-    output: true
-    permalink: /:collection/:path/
-  aws_guard_firewall:
-    output: true
-    permalink: /:collection/:path/
-  aws_machine_learning:
-    output: true
-    permalink: /:collection/:path/
-  aws_rds:
-    output: true
-    permalink: /:collection/:path/
-  aws_route53:
-    output: true
-    permalink: /:collection/:path/
-  aws_s3:
-    output: true
-    permalink: /:collection/:path/
-  aws_serverless:
-    output: true
-    permalink: /:collection/:path/
-  aws_sqs:
-    output: true
-    permalink: /:collection/:path/
-  aws_storage:
-    output: true
-    permalink: /:collection/:path/
-  aws_asg:
-    output: true
-    permalink: /:collection/:path/
-  aws_container:
-    output: true
-    permalink: /:collection/:path/
-  programming:
-    output: true
-    permalink: /:collection/:path/
+collections: {}
 
 social:
   - service: github
