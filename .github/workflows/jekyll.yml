@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          submodules: true        # pulls submodules
+          fetch-depth: 0          # ensures full history (optional, good for Jekyll sites)
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
