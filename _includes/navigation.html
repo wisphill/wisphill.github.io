@@ -7,13 +7,13 @@
        role="menuitem" href="{{ '/' | prepend: site.baseurl }}" title="Home">
       _home
     </a>
-    {% for category in site.data.category %}
-    <a class="menu-item {% if url contains category.value %}active{% endif %}"
+    {% for category in site.auto_categories %}
+    <a class="menu-item {% if url contains category %}active{% endif %}"
        role="menuitem">
-      _{{ category.value }}
+      _{{ category }}
     </a>
 
-    {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains category.value" %}
+    {% assign filtered_collections = site.collections | where_exp: "item", "item.label contains category" %}
     <div class="group_label">
       {% for collection in filtered_collections %}
       <a href="{{ collection.url | prepend: site.baseurl | append: '/' |append: collection.label }}"
