@@ -1,9 +1,10 @@
 <div class="t-hackcss-navigation">
   <h2 class="t-hackcss-navigation-heading">Menu</h2>
-  {% assign url = page.url|remove:'index.html' %}
+  {% assign url = page.url %}
+  {% assign collection_name = page.url | split: '/' | slice: 1, 1 | first %}
 
   <nav class="menu" role="menubar">
-    <a class="menu-item {% if url == link.url %}active{% endif %}"
+    <a class="menu-item {% if collection_name == '' or collection_name == nil %}active{% endif %}"
        role="menuitem" href="{{ '/' | prepend: site.baseurl }}" title="Home">
       _home
     </a>
@@ -17,7 +18,7 @@
     <div class="group_label">
       {% for collection in filtered_collections %}
       <a href="{{ collection.url | prepend: site.baseurl | append: '/' |append: collection.label }}"
-         class="label_box {% if url contains collection.label %}active{% endif %}">
+         class="label_box {% if collection.label == collection_name and collection_name != '' %}active{% endif %}">
         {{ collection.label | replace: 'aws', ''  | replace: '_', ' ' }}
       </a>
       {% endfor %}
