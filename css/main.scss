@@ -133,6 +133,10 @@ a:hover {
   100% { opacity: 0; }
 }
 
+.cell {
+  overflow: scroll;
+}
+
 // hacked paragraph animation
 .hacked-paragraph {
   position: relative;
@@ -149,56 +153,56 @@ a:hover {
 }
 
 @keyframes shadow-flicker {
-  0%, 20% { 
-    transform: translate(0, 0); 
+  0%, 20% {
+    transform: translate(0, 0);
     opacity: 0; /* Shadow off */
   }
-  21% { 
+  21% {
     transform: translate(8px, -4px); /* Right-up */
     opacity: 0.5; /* Shadow on */
   }
-  25% { 
-    transform: translate(8px, -4px); 
+  25% {
+    transform: translate(8px, -4px);
     opacity: 0; /* Shadow off */
   }
-  26% { 
-    transform: translate(0, 0); 
-    opacity: 0; 
+  26% {
+    transform: translate(0, 0);
+    opacity: 0;
   }
-  30% { 
+  30% {
     transform: translate(-6px, 5px); /* Left-down */
     opacity: 0.5; /* Shadow on */
   }
-  35% { 
-    transform: translate(-6px, 5px); 
+  35% {
+    transform: translate(-6px, 5px);
     opacity: 0; /* Shadow off */
   }
-  36% { 
-    transform: translate(0, 0); 
-    opacity: 0; 
+  36% {
+    transform: translate(0, 0);
+    opacity: 0;
   }
-  52% { 
+  52% {
     transform: translate(5px, 3px); /* Right-down */
     opacity: 0.5; /* Shadow on */
   }
-  56% { 
-    transform: translate(5px, 3px); 
+  56% {
+    transform: translate(5px, 3px);
     opacity: 0; /* Shadow off */
   }
-  57% { 
-    transform: translate(0, 0); 
-    opacity: 0; 
+  57% {
+    transform: translate(0, 0);
+    opacity: 0;
   }
-  60% { 
+  60% {
     transform: translate(-3px, -5px); /* Left-up */
     opacity: 0.5; /* Shadow on */
   }
-  65% { 
-    transform: translate(-3px, -5px); 
+  65% {
+    transform: translate(-3px, -5px);
     opacity: 0; /* Shadow off */
   }
-  66%, 100% { 
-    transform: translate(0, 0); 
+  66%, 100% {
+    transform: translate(0, 0);
     opacity: 0; /* Shadow off */
   }
 }
