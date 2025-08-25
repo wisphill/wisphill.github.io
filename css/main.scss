@@ -168,6 +168,24 @@ a:hover {
   height: 30px;
 }
 
+.hashtag {
+  display: inline-block;
+  background-color: #fcecec;
+  color: #8b0000;
+  padding: 0.25em 0.75em;
+  margin: 0.2em;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hashtag:hover {
+  background-color: #ffdddd;
+  color: #a30000;
+}
+
 @keyframes shadow-flicker {
   0%, 20% {
     transform: translate(0, 0);
