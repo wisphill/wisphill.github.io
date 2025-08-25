@@ -237,18 +237,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const textarea = document.getElementById('search');
 textarea.addEventListener('input', function() {
-    this.style.height = '';
-    this.style.height =  this.scrollHeight + 'px';
+    textarea.style.height = '';
+    textarea.style.height =  textarea.scrollHeight + 'px';
 });
 
 // Enable clicking hashtags to search for them
 document.querySelectorAll('span.hashtag').forEach(span => {
     span.addEventListener('click', function () {
-        const searchInput = document.getElementById('search');
-        if (searchInput) {
-            searchInput.value = this.textContent;
-            searchInput.dispatchEvent(new Event('input', { bubbles: true }));
-            searchInput.focus();
-        }
+        textarea.value = this.textContent;
+        textarea.dispatchEvent(new Event('input', { bubbles: true }));
+        textarea.focus();
     });
 });
