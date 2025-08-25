@@ -6,6 +6,7 @@
 
 $main_color: #f44336;
 $background_color: #FAF8F6FF;
+$main_font: Menlo,Monaco,Consolas,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
 
 // Our variables
 $spacing-unit:     10px;
@@ -21,7 +22,7 @@ html {
 }
 
 body {
-  font-family: Menlo,Monaco,Consolas,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif !important;
+  font-family: $main_font !important;
 }
 
 a {
@@ -150,6 +151,21 @@ a:hover {
   width: 100%;
   color: #aaa;
   animation: shadow-flicker 10s infinite steps(1, start);
+}
+
+/* Style the search input */
+#search {
+  width: 90%;
+  font-family: $main_font;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden;
+  line-height: 1;
+  height: 30px;
 }
 
 @keyframes shadow-flicker {

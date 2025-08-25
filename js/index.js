@@ -234,3 +234,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+const textarea = document.getElementById('search');
+textarea.addEventListener('input', function() {
+    this.style.height = '';
+    this.style.height =  this.scrollHeight + 'px';
+});
