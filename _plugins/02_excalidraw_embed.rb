@@ -1,5 +1,5 @@
 # _plugins/auto_collections_and_categories.rb
-Jekyll::Hooks.register :site, :after_reset do |site|
+Jekyll::Hooks.register :site, :post_read do |site|
   puts "[ExcalidrawEmbed] Registering hooks for collections: #{site.config['collections'].keys.join(', ')}"
   collections = site.config["collections"].keys.map(&:to_sym)
   collections.each do |coll|
