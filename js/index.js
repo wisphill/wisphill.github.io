@@ -126,3 +126,111 @@ function updateAnimation() {
 
 // Run on page load
 window.onload = updateAnimation;
+
+
+////////////////////////////
+/// Search functionality ///
+////////////////////////////
+// Helper to get query parameter by name
+function getQueryParam(name) {
+    const params = new URLSearchParams(window.location.search.replace('&', '?'));
+    return params.get(name) || '';
+}
+
+let tagMapData = {};
+const searchInput = document.getElementById('search');
+// Set input value from URL if present
+const urlQuery = getQueryParam('query');
+if (urlQuery) {
+    searchInput.value = urlQuery;
+}
+
+const baseUrl = window.location.origin;
+
+function renderResults(query, items) {
+    const mainBlock = document.getElementById('search-results');
+    if (query === '' || query === null) {
+        mainBlock.innerHTML = '';
+        return;
+    }
+
+    mainBlock.innerHTML = '';
+    items.forEach(item => {
+        console.log(item)
+        const div = document.createElement('div');
+        div.className = 'media t-hackcss-media';
+        div.innerHTML = `
+                    <div class="media-body">
+                        <div class="media-heading">
+                            <span>▢
+                                <a href="${baseUrl}/${item}">
+                                    ${item}
+                                </a>
+                            </span>
+                        </div>
+                        <div class="media-content">
+                            ${item || ''}
+                        </div>
+                    </div>
+                `;
+        mainBlock.appendChild(div);
+    });
+}
+
+searchInput.addEventListener('input', function () {
+    const rawQuery = this.value.trim();
+    // Update the URL with the current query value
+    const params = new URLSearchParams(window.location.search.replace('&', '?'));
+    if (rawQuery) {
+        params.set('query', rawQuery);
+    } else {
+        params.delete('query');
+    }
+    const newUrl = `${baseUrl}/search?${params.toString()}`;
+    if (!window.location.pathname.includes('/search')) {
+        window.location.href = newUrl;
+        return
+    } else {
+        window.history.replaceState({}, '', newUrl);
+    }
+
+    let results = [];
+    if (rawQuery.startsWith('#')) {
+        const tag = rawQuery.slice(1).toLowerCase();
+        if (tagMapData.hasOwnProperty(tag)) {
+            results = tagMapData[tag];
+        }
+    } else {
+        const query = rawQuery.toLowerCase();
+        if (tagMapData.hasOwnProperty(query)) {
+            results = tagMapData[query];
+        } else {
+            results = Object.entries(tagMapData)
+                .filter(([tag]) => tag.toLowerCase().includes(query))
+                .flatMap(([_, files]) => files);
+        }
+    }
+    renderResults(rawQuery, results);
+});
+
+fetch('/assets/tag_map.json')
+    .then(res => res.json())
+    .then(data => {
+        tagMapData = data;
+        // Trigger search if value was set from URL
+        if (urlQuery) {
+            searchInput.dispatchEvent(new Event('input'));
+        }
+    })
+    .catch(err => {
+        console.error('Failed to load tag_map.json:', err);
+    });
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (window.location.pathname.includes('/search')) {
+        const searchInput = document.getElementById('search');
+        if (searchInput) {
+            searchInput.focus();
+        }
+    }
+});
