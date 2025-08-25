@@ -1,6 +1,6 @@
 # _plugins/auto_collections_and_categories.rb
 Jekyll::Hooks.register :site, :after_reset do |site|
-  # Register Excalidraw hook for all collections
+  puts "[ExcalidrawEmbed] Registering hooks for collections: #{site.config['collections'].keys.join(', ')}"
   collections = site.config["collections"].keys.map(&:to_sym)
   collections.each do |coll|
     Jekyll::Hooks.register coll, :pre_render do |doc|
@@ -15,4 +15,5 @@ Jekyll::Hooks.register :site, :after_reset do |site|
       end
     end
   end
+  puts "[ExcalidrawEmbed] Finished processing documents"
 end

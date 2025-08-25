@@ -1,4 +1,4 @@
-# _plugins/tag_map_builder.rb
+# _plugins/03_tag_map_builder.rb
 require "jekyll"
 require "json"
 
