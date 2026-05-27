@@ -21,15 +21,15 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#FFFFFF" # Pure crisp white background
+        lightgray: "#F4F1EA" # Ultra-soft warm sand for borders and tags
+        gray: "#998E80" # Muted warm taupe for dates and secondary icons
+        darkgray: "#2B2927" # Deep earthy charcoal for standard markdown body text
+        dark: "#141312" # Solid dark ink for main page headings (H1, H2, H3)
+        secondary: "#1A1917" # Near-black for the site title, folders, and explorer text (Solves your issue!)
+        tertiary: "#D96B27" # Your hot vibrant copper orange, now used strictly for hovers and active states
+        highlight: "rgba(217, 107, 39, 0.06)" # Barely-there warm tint for line/card highlights
+        textHighlight: "#FFEAA788" # Soft pastel gold for text search highlighting
       darkMode:
         light: "#161618"
         lightgray: "#393639"
