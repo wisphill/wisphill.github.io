@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:wisphill/yuu_academy.git
