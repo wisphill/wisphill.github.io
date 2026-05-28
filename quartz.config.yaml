@@ -21,15 +21,15 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#FFFFFF" # Pure crisp white background
-        lightgray: "#F4F1EA" # Ultra-soft warm sand for borders and tags
-        gray: "#998E80" # Muted warm taupe for dates and secondary icons
-        darkgray: "#2B2927" # Deep earthy charcoal for standard markdown body text
-        dark: "#141312" # Solid dark ink for main page headings (H1, H2, H3)
-        secondary: "#1A1917" # Near-black for the site title, folders, and explorer text (Solves your issue!)
-        tertiary: "#D96B27" # Your hot vibrant copper orange, now used strictly for hovers and active states
-        highlight: "rgba(217, 107, 39, 0.06)" # Barely-there warm tint for line/card highlights
-        textHighlight: "#FFEAA788" # Soft pastel gold for text search highlighting
+        light: "#FFFFFF"
+        lightgray: "#F4F1EA"
+        gray: "#998E80"
+        darkgray: "#2B2927"
+        dark: "#141312"
+        secondary: "#1A1917"
+        tertiary: "#D96B27"
+        highlight: rgba(217, 107, 39, 0.06)
+        textHighlight: "#FFEAA788"
       darkMode:
         light: "#161618"
         lightgray: "#393639"
@@ -76,7 +76,7 @@ plugins:
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
-      markdownLinkResolution: absolute
+      markdownLinkResolution: shortest
     order: 60
   - source: github:quartz-community/description
     enabled: true
@@ -246,6 +246,13 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+  - source: github:quartz-community/obsidian-plugin-excalidraw
+    enabled: true
+    options:
+      enableInteraction: false
+      darkMode: auto
+      exportPadding: 20
+    order: 50
 layout:
   groups:
     toolbar:
