@@ -17,3 +17,8 @@ code[data-language*="table-of-contents"] {
 .excalidraw-container {
   pointer-events: none;
 }
+
+// search input to use the brightness instead of blurry
+.search>.search-container {
+  backdrop-filter: brightness(0.5) !important;
+}
