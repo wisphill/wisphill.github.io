@@ -1,3 +1,19 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// hide the bad display of the redundant table of contents code
+code[data-language*="table-of-contents"] {
+  display: none !important;
+}
+
+// disable transform of the svg
+.excalidraw-container svg {
+  transform: none !important;
+  overscroll-behavior: contain;
+}
+
+// disable pointer events on the excalidraw container, avoid the parent passes event to the child
+.excalidraw-container {
+  pointer-events: none;
+}
