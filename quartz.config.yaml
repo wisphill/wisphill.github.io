@@ -213,8 +213,11 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        👾 Discord: https://discord.gg/Zz8GhHETqS
+        📦 Github: https://github.com/wisphill
+        🔗 Linkedin: https://www.linkedin.com/in/wisphill
+        🎨 Deviantart: https://www.deviantart.com/yuulya
+        📮 Contact: admin@opswork.io.vn
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
